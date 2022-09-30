@@ -1,9 +1,9 @@
-buger_EL = document.querySelector("#burger");
-burger_num_EL = document.querySelector("#burgers_num");
-hand_EL = document.querySelector("#hand_img");
-hand_num_EL = document.querySelector("#hand_num");
+burger_press = document.querySelector("#burger");
+burger_num = document.querySelector("#burger_num");
+hand = document.querySelector("#hand_img");
+hand_num = document.querySelector("#hand_num");
 
-console.log(burger_num_EL);
+console.log(burger_num);
 
 burger = 0;
 hands = 0;
@@ -19,12 +19,12 @@ function buy_hand(){
     
 }
 
-burger_EL.addEventListener("click", burger_click); // når vi klikker på cookie
-hand_EL.addEventListener("click", buy_hand)
+burger_press.addEventListener("click", burger_click); // når vi klikker på cookie
+hand.addEventListener("click", buy_hand)
 
 var timer = setInterval(myTimer, 10); // kjører funksjonen myTimer 1 gang i sekundet
 function myTimer(){ 
     burger += hands;
-    burger_num_EL.innerHTML = burger;
+    burger_num.innerHTML = burger;
     
 }
