@@ -7,3 +7,10 @@
     width: 30%;
     height: 30%;
 }
+
+#worker {
+    width: 15%;
+    height: 15%;
+    border: 50px;
+}
+
