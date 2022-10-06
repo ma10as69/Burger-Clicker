@@ -12,7 +12,8 @@ hands = 0;
 worker = 0;
 seconds_shop = 1000;
 seconds_worker = 1000;
-price_hand = 50;
+price_hand = 10;
+price_worker = 10;
 
 
 function burger_click(){
@@ -30,9 +31,9 @@ function buy_hand(){
     
 }
 function hire_worker(){
-    if (burger >= 10){
+    if (burger >= price_worker){
         worker++;
-        burger -= 10;
+        burger -= price_worker;
         seconds_worker -= 100;
         timer_worker = setInterval(myTimer_worker, seconds_worker);
     }
@@ -59,7 +60,7 @@ function myTimer_worker(){
         burger_click();
     }
 
-    hand_num.innerHTML = worker;
+    worker_num.innerHTML = worker;
 }
 
 
