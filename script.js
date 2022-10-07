@@ -9,7 +9,7 @@ console.log(burger_num);
 
 burger = 0;
 hands = 0;
-worker = 0;
+worker_amount = 0;
 seconds_shop = 1000;
 seconds_worker = 1000;
 price_hand = 10;
@@ -32,17 +32,18 @@ function buy_hand(){
 }
 function hire_worker(){
     if (burger >= price_worker){
-        worker++;
+        worker_amount++;
         burger -= price_worker;
         seconds_worker -= 100;
+            price_worker *= 2;
         timer_worker = setInterval(myTimer_worker, seconds_worker);
     }
-    
+    worker_num.innerHTML = worker_amount;
 }
 
 burger_press.addEventListener("click", burger_click); // når vi klikker på cookie
 hand.addEventListener("click", buy_hand)
-hand.addEventListener("click", hire_worker)
+worker.addEventListener("click", hire_worker)
 
 
 var timer_shop = setInterval(myTimer_shop, seconds_shop); // kjører funksjonen myTimer 1 gang i sekundet
@@ -56,15 +57,16 @@ function myTimer_shop(){
 
 var timer_worker = setInterval(myTimer_worker, seconds_worker);
 function myTimer_worker(){ 
-    if (worker >= 1){
+    if (worker_amount >= 1){
         burger_click();
     }
 
-    worker_num.innerHTML = worker;
+    
 }
 
 
 var timer_refresh = setInterval(refresh_timer, 1)
 function refresh_timer(){
     burger_num.innerHTML = burger;
+    
 }
