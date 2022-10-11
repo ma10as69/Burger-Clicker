@@ -1,5 +1,6 @@
 burger_press = document.querySelector("#burger");
 burger_num = document.querySelector("#burger_num");
+burger_sell = document.getElementById("#burger_sell");
 hand = document.querySelector("#hand");
 hand_num = document.querySelector("#hand_num");
 worker = document.querySelector("#worker");
@@ -23,6 +24,9 @@ price_worker = 10;
 
 function burger_click(){
     burger++;
+}
+function SellFunction() {
+    sell_burger.disabled = true;
 }
 function buy_hand(){
     if (burger >= price_hand){
