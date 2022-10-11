@@ -4,11 +4,16 @@ hand = document.querySelector("#hand");
 hand_num = document.querySelector("#hand_num");
 worker = document.querySelector("#worker");
 worker_num = document.querySelector("#worker_num");
+money = document.querySelector("#money");
+money_num = document.querySelector("#money_num");
+
 
 console.log(burger_num);
 
+
 burger = 0;
 hands = 0;
+money = 0;
 worker_amount = 0;
 seconds_shop = 1000;
 seconds_worker = 1000;
