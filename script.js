@@ -36,7 +36,6 @@ function buy_hand(){
         burger -= price_hand;
         seconds_shop -= 100;
         price_hand *= 2;
-        clicks_persec;
         timer_shop = setInterval(myTimer_shop, seconds_shop); // kjører funksjonen myTimer 1 gang i sekundet
         clicks_persec.innerHTML = clicks_persecond;
     
