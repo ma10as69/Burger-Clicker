@@ -1,20 +1,35 @@
-#hand {
-    width: 10%;
-    height: 10%;
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.left {
+    height:500px;
+    margin-right: 50%;
+    min-width: 300px;
 }
 
 #burger {
-    width: 30%;
-    height: 30%;
+    width: 80%;
+    height: 80%;
+}
+
+#hand {
+    width: 20%;
+    height: 20%;
 }
 
 #worker {
-    width: 15%;
-    height: 15%;
+    width: 45%;
+    height: 45%;
 }
 
 #money {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 30%;
 }
-
