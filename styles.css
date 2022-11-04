@@ -10,16 +10,17 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .left {
     height:600px;
-    margin-right: 25%;
+    margin-right: 40%;
     min-width: 300px;
 }
 
 .workers {
     display: flex;
     flex-direction: row;
-    height:100px;
+    height:290px;
     border:5px solid #000000
 
 
@@ -36,7 +37,7 @@ body {
 }
 #sell {
     width: 40%;
-    height: 80%;
+    height: 55%;
 }
 
 #worker {
@@ -46,6 +47,6 @@ body {
 
 
 #money {
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
 }
