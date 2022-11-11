@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(181, 122, 85);
+    background-color: rgb(238, 176, 101);
     background-size: cover;
-    background-position: center;
+    background-position: center;  
     font-family: 'Arial';
 }
 
@@ -9,44 +9,127 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items:center;
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .left {
-    height:600px;
-    margin-right: 40%;
-    min-width: 300px;
+    height:950px;
+    width: 625px;
+    
+    
+    border:5px solid #000000
+    
+}
+
+.shop_elements {
+    display: flex;
+    flex-direction: row;
+    height:250px;
+    align-items: center;
+    border:5px solid #000000
+}
+
+.middle {
+    height:950px;
+    width: 625px;
+    text-align: center;
+    border:5px solid #000000
+}
+
+.right {
+    height:950px;
+    width: 625px;
+    border:5px solid #000000
 }
 
 .workers {
     display: flex;
     flex-direction: row;
-    height:290px;
+    height:250px;
+    align-items: center;
     border:5px solid #000000
-
-
 }
 
+.sell {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.worker {
+    display: flex;
+    flex-direction: row;
+}
+
+.economy {
+    display: flex;
+    flex-direction: row;
+    height:600px;
+    border:5px solid #000000
+}
+
+.money {
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.money_text {
+    border:5px solid #000000
+}
+
+.workers_text {
+    border:5px solid #000000
+}
+
+.shop_text {
+    border:5px solid #000000
+}
+
+.hand {
+    display: flex;
+    flex-direction: row;
+}
+
+.empty_div {
+    display: flex;
+    flex-direction: row;
+    height:610px;
+    border:5px solid #000000
+}
+
+
+
+
 #burger {
-    width: 80%;
-    height: 80%;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 300px;   
 }
 
 #hand {
-    width: 30%;
-    height: 30%;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;   
 }
 #sell {
-    width: 40%;
-    height: 55%;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;   
 }
 
 #worker {
-    width: 45%;
-    height: 45%;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;   
 }
 
 
 #money {
-    width: 20%;
-    height: 20%;
+    min-width: 150px;
+    min-height: 150px;
+    max-height: 150px;   
 }
